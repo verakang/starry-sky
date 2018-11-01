@@ -1,0 +1,163 @@
+$color_blue: #89bdf4
+
+// 除錯
+// *
+//   border: solid 1px #aaa
+// header,section
+//   display: none
+  
+// #section_move
+//   display: block
+
+*
+  font-family: 微軟正黑體
+  position: relative
+  ::selection
+    background-color: #ff6bb9
+    color: #fff
+    
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+  font-weight: bold
+  
+ 
+nav.navbar.navbar-default.navbar-fixed-top.navbar-top
+  background-color: transparent
+  a
+    color: #fff
+    transition: 0.5s
+    &:hover
+      color: $color_blue
+    
+nav.navbar.navbar-default.navbar-fixed-top
+  transition: 0.5s
+  a
+    &:hover
+      color: $color_blue    
+  
+header.jumbotron
+  background-image: url(https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-0.3.5&s=59bc6d653fe14e940a995c93b644c8ef&auto=format&fit=crop&w=1490&q=80)
+  background-size: cover
+  background-attachment: fixed
+  text-align: center
+  margin-bottom: 0px
+  .container
+    color: #fff
+    padding: 350px 0px
+   
+  hr
+    max-width: 50px
+    border: solid 2px $color_blue
+  h4
+    color: rgba(#fff,0.6)
+    font-weight: normal
+section
+  padding: 50px 0px    
+    
+section#section_ask
+  background-image: linear-gradient(220deg, #a1c4fd 0%, #c2e9fb 100%)
+  .col-sm-5.img
+    background-image: url(https://img.clipartxtras.com/e6f809c9d76fc18e6709c5d5b1af8126_starry-night-coloring-page-many-interesting-cliparts-the-starry-night-drawing_1024-825.jpeg)
+    background-position: center center
+    background-size: 120%
+    height: 350px
+    mix-blend-mode: multiply
+  h2
+    margin-top: 130px
+    padding: 0px 20px
+    
+section#section_about
+  p
+    text-align: justify
+    padding-bottom: 10px
+  img
+    width: 120%
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+  .img_wrap
+    height: 220px
+    overflow: hidden
+    margin-bottom: 10px
+    
+section#section_story
+  background-color: #222
+  color: #fff
+  padding: 0px
+  .col-sm-5  
+    background-image: url(https://img.purch.com/h/1000/aHR0cDovL3d3dy5zcGFjZS5jb20vaW1hZ2VzL2kvMDAwLzAxNy8wNTQvb3JpZ2luYWwvbm9ydGhlcm4tY29uc3RlbGxhdGlvbnMtc2t5LmpwZw==)
+    background-size: 130% auto
+    background-position: center center
+    height: 400px 
+    .cross
+      position: absolute
+      left: 30%
+      top: 40%
+      color: red
+      font-size: 30px
+      font-weight: bold
+  .col-sm-7
+    text-align: center
+  .col-sm-12.features
+    margin: 25px 0px
+.icon
+  font-size: 35px
+  color: $color_blue
+    
+section#section_move
+  img
+    width: 100%
+  .icon
+    font-size: 30px 
+  .features
+    padding: 10px 20px
+    
+footer.jumbotron
+  background-image: url(https://images.unsplash.com/photo-1444080748397-f442aa95c3e5?ixlib=rb-0.3.5&s=59bc6d653fe14e940a995c93b644c8ef&auto=format&fit=crop&w=1490&q=80)
+  background-size: cover
+  background-attachment: fixed
+  text-align: center
+  margin-bottom: 0px
+  input
+    background-color: transparent
+    max-width: 350px
+    margin-left: auto
+    margin-right: auto
+  .container
+    color: #fff
+    padding: 50px 0px
+   
+  hr
+    max-width: 50px
+    border: solid 2px $color_blue    
+  
+  
+    
+    
+    
+@media screen and (max-width: 991px)
+  section#section_about
+    .img_wrap
+      height: 150px
+  section#section_ask
+    .col-sm-5.img
+      background-size: 150%      
+      
+@media screen and (max-width: 767px)
+  section#section_about
+    .img_wrap
+      height: 180px   
+  section#section_ask
+    .col-sm-5.img
+      background-size: 110%           
+      
+@media screen and (max-width: 575px)
+  section#section_about
+    .img_wrap
+      height: 220px      
+        
+  
+
+    
+  
+  
